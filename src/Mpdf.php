@@ -1584,7 +1584,7 @@ class Mpdf implements \Psr\Log\LoggerAwareInterface
 	 *
 	 * @return \Mpdf\Mpdf
 	 */
-	public function setLogger(LoggerInterface $logger): \Mpdf\Mpdf
+	public function setLogger(LoggerInterface $logger): void
 	{
 		$this->logger = $logger;
 
@@ -1594,7 +1594,7 @@ class Mpdf implements \Psr\Log\LoggerAwareInterface
 			}
 		}
 
-		return $this;
+		//return $this;
 	}
 
 	private function initConfig(array $config)
